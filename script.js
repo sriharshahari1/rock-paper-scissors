@@ -46,7 +46,7 @@ function round(playerSelection,compSelection){
             roundWinner="player";
         }
         else {
-            compScore;
+            compScore++;
             roundWinner="computer";
         }
     }
@@ -92,10 +92,16 @@ function round(playerSelection,compSelection){
     
     //declaring game winner
     if(playerScore==5){
-        winner.textContent="player wins game";
+        winner.textContent="player won game!";
+        rockbtn.disabled=true;
+        paperbtn.disabled=true;
+        scissorsbtn.disabled=true;
     }
     else if(compScore==5){
-        winner.textContent="Computer wins the game";
+        winner.textContent="Computer won the game!";
+        rockbtn.disabled=true;
+        paperbtn.disabled=true;
+        scissorsbtn.disabled=true;
     }
 }
 
